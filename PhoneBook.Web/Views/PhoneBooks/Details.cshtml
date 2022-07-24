@@ -6,7 +6,36 @@
 
 <h2>Details</h2>
 
+<div class="card border-info mb-3" style="max-width: 20rem;">
+    <div class="card-header">
+        <strong>@Html.DisplayNameFor(model => model.Name)</strong>
+    </div>
+    <div class="card-body">
+        <p class="card-text">@Html.DisplayFor(model => model.Name)</p>
+    </div>
+</div>
+<div class="card border-info mb-3" style="max-width: 20rem;">
+    <div class="card-header">
+        <strong>@Html.DisplayNameFor(model => model.PhoneNumber)</strong>
+    </div>
+    <div class="card-body">
+        <p class="card-text">@Html.DisplayFor(model => model.PhoneNumber)</p>
+    </div>
+</div>
+
+<div class="card border-info mb-3" style="max-width: 20rem;">
+    <div class="card-header">
+        <strong>@Html.DisplayNameFor(model => model.Address)</strong>
+    </div>
+    <div class="card-body">
+        <p class="card-text">@Html.DisplayFor(model => model.Address)</p>
+    </div>
+</div>
 <div>
+    <button type="button" class="btn btn-link" style="margin:5px" onclick="location.href='@Url.Action("Edit","PhoneBooks", new { id = Model.Id})'">Edit</button>
+    <button type="button" class="btn btn-link" style="margin:5px" onclick="location.href='@Url.Action("Index","PhoneBooks")'">Back to List</button>
+</div>
+@*<div>
     <h4>PhoneBook</h4>
     <hr />
     <dl class="dl-horizontal">
@@ -35,8 +64,8 @@
         </dd>
 
     </dl>
-</div>
-<p>
+</div>*@
+@*<p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
     @Html.ActionLink("Back to List", "Index")
-</p>
+</p>*@

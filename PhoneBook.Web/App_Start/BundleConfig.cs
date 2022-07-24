@@ -23,7 +23,7 @@ namespace PhoneBookWeb
                       "~/Scripts/bootstrap.js"));
 
             bundles.Add(new Bundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
+                      "~/Content/bootstrap_lumin.css",
                       "~/Content/site.css"));
         }
     }
